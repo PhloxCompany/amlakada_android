@@ -1,10 +1,8 @@
 import 'package:amlakada_android/configs/app_theme.dart';
 import 'package:amlakada_android/controllers/providers/setting_provider.dart';
-import 'package:amlakada_android/ui/pages/home/home_page.dart';
 import 'package:amlakada_android/ui/pages/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   runApp(const _InitProviders());
@@ -34,7 +32,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: AppTheme.light(context).theme,
       darkTheme: AppTheme.dark(context).theme,
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
       home: const SplashScreenPage(),
     );
   }
